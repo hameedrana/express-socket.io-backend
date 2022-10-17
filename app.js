@@ -38,7 +38,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 // require socket.io
-const io = require('socket.io')(); //<------
-require('./socket')(io)            //<------ 
+const io = require('socket.io')(); 
+require('./socket')(io)            
 
 module.exports = {app,io};
